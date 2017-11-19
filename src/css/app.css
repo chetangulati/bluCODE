@@ -54,7 +54,6 @@ header {
   #banner #q {
     width: 75%;
     padding: 7px;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: sans-serif;
     font-size: 16px;
@@ -62,7 +61,6 @@ header {
     background: #b4b4b4; }
   #banner #qsubmit {
     width: 15%;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0 5% 0 0;
     height: 33px;
@@ -100,7 +98,6 @@ header {
     float: left;
     overflow: hidden;
     border-radius: 10px;
-    -webkit-box-shadow: 3px 3px 15px #aaa;
     box-shadow: 3px 3px 15px #aaa; }
     .card .block .blkimg {
       width: 100%;
@@ -154,10 +151,6 @@ header {
       width: 80%;
       float: left; }
 
-#blankspace {
-  height: 5px;
-  width: 100%; }
-=======
 #profile {
   background: #fff; }
   #profile h2 {
@@ -204,7 +197,13 @@ header {
       width: 90%;
       display: table; }
 
+#blankspace {
+  height: 5px;
+  width: 100%; }
+
 footer {
   width: 100%;
   background: #27272d;
   height: 200px; }
+
+/*# sourceMappingURL=app.css.map */
