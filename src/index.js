@@ -20,6 +20,7 @@ var Root = createClass({
       <div>
         <Head />
         {this.renderContent()}
+        <Saved />
         <Threads/>
         <Profile />
         <Footer />
