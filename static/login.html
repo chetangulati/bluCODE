@@ -35,6 +35,7 @@
         color: #999;
         float: left;
         border: 5px solid #2979ff;
+        transition: box-shadow .3s ease-in-out;
       }
       label{
         color: #e6e6e6;
@@ -53,44 +54,71 @@
         font-weight: bolder;
         font-size: 22px;
       }
-      .animated {
-        animation-duration: 1s;
-        animation-fill-mode: both;
-      }
-      @keyframes zoomIn {
-      from {
-        opacity: 0;
-        transform: scale3d(.3, .3, .3);
-        -webkit-transform: scale3d(.3, .3, .3);
-        -moz-transform: scale3d(.3, .3, .3);
+
+    /* for changing inputting text color in input field by user */
+    input, select, textarea{
+          color: #E6E6E6;
       }
 
-      50% {
-        opacity: 1;
+      textarea:focus, input:focus {
+          color: #E6E6E6;
       }
-    }
 
-    .zoomIn {
-      float: left;
-      position: relative;
-      animation-name: zoomIn;
-      -webkit-animation-name: zoomIn;
-      -moz-animation-name: zoomIn;
-    }
+      #svgframe{
+        width: 65%;
+        margin: 50px 17%;
+      }
+
+      .hov:hover{
+        box-shadow: 0px 0px 10px 0px #40C4FF;
+        transition: box-shadow .3s ease-in-out;
+      }
     </style>
   </head>
   <body>
-    <img src="logo.svg" alt="bluCODE">
+    <div id="svgframe">
+    <svg viewBox="0 0 928.01 361.92">
+        <defs>
+        <style>
+            .cls-1{fill:#2979ff;}
+            .cls-2{fill:none;}
+            .cls-3{fill:#40c4ff;}
+            .cls-4{fill:#fff;}
+            .cls-5{fill:#999;}
+          </style>
+          </defs>
+            <ellipse id="Oval" class="cls-1" cx="540.82" cy="180.96" rx="181.7" ry="180.96"/><rect id="Rectangle-path" class="cls-2" x="359.12" width="363.4" height="361.92"/>
+          <ellipse id="Oval-2" data-name="Oval" class="cls-3" cx="541.92" cy="182.06" rx="121.13" ry="120.64"/>
+          <ellipse id="Oval-3" data-name="Oval" class="cls-4" cx="540.82" cy="180.96" rx="60.57" ry="60.32"/>
 
+      <path class="cls-5" d="M337.36,145.29l-8.49,6.64A46.61,46.61,0,0,0,312,137.8,48.58,48.58,0,0,0,290.38,133a47.09,47.09,0,0,0-23.85,6.3,44.79,44.79,0,0,0-17,16.93,47.52,47.52,0,0,0-6,23.9q0,20.06,13.5,33.48T291,227q22.61,0,37.83-18l8.49,6.56a54.42,54.42,0,0,1-20.09,16.14,62,62,0,0,1-26.89,5.7q-28.25,0-44.56-19.16Q232.14,202,232.14,179.15q0-24.08,16.57-40.53t41.53-16.44a60,60,0,0,1,27.22,6.08A53.12,53.12,0,0,1,337.36,145.29Z" transform="translate(-10.32)"/>
+
+      <path class="cls-5" d="M765.06,235V125.27h22.32q24.15,0,35,4a47,47,0,0,1,24.48,19.39q8.82,13.8,8.82,32.88,0,16.48-7,29T830.59,229q-11.16,6-31.28,6Zm10.32-10.36h12.44q22.32,0,31-2.83a35.77,35.77,0,0,0,19.1-14.49q7-10.47,7-25.59,0-15.87-7.54-27.12a38,38,0,0,0-21-15.42Q806.19,136,783,136h-7.61Z" transform="translate(-10.32)"/>
+
+      <path class="cls-5" d="M876.65,125.27h61.68V136H887.41v34.37H937.9v10.74H887.41v43.1H937.9V235H876.65Z" transform="translate(-10.32)"/></g><g id="Layer_2-2" data-name="Layer 2">
+
+      <path class="cls-1" d="M10.32,223.07V126.94h8.76v38.7a37.1,37.1,0,0,1,12.31-10.3,32.89,32.89,0,0,1,14.94-3.41A32.89,32.89,0,0,1,71,162.6a36.11,36.11,0,0,1,10.22,25.92,35.59,35.59,0,0,1-10.31,25.69,33.3,33.3,0,0,1-24.81,10.65A31.26,31.26,0,0,1,31,221.23a35.38,35.38,0,0,1-11.94-10.9v12.75Zm35-6.82a25.94,25.94,0,0,0,13.48-3.67,26.62,26.62,0,0,0,9.83-10.3,28.78,28.78,0,0,0,0-28.12,27.13,27.13,0,0,0-9.89-10.42A25.33,25.33,0,0,0,45.48,160a26.86,26.86,0,0,0-13.64,3.73,25.74,25.74,0,0,0-9.92,10A29.05,29.05,0,0,0,18.46,188q0,12,7.77,20.15A25.47,25.47,0,0,0,45.36,216.25Z" transform="translate(-10.32)"/>
+
+      <path class="cls-1" d="M95.84,126.94h8.76v96.14H95.84Z" transform="translate(-10.32)"/>
+
+      <path class="cls-1" d="M121.68,153.71h8.76V186.1q0,11.86,1.25,16.32a18.18,18.18,0,0,0,7.17,10.07,21.49,21.49,0,0,0,12.63,3.7,21,21,0,0,0,12.44-3.6,18.4,18.4,0,0,0,7-9.47q1.32-4,1.32-17V153.71h8.95v34q0,14.34-3.28,21.61a25.42,25.42,0,0,1-9.89,11.38q-6.6,4.11-16.55,4.11t-16.61-4.11A25.21,25.21,0,0,1,125,209.27q-3.28-7.36-3.28-22.15Z" transform="translate(-10.32)"/>
+
+      <path class="cls-1" d="M210.33,209a7.34,7.34,0,0,1,5.44,2.29,8.07,8.07,0,0,1,0,11.19,7.53,7.53,0,0,1-10.89,0,8.07,8.07,0,0,1,0-11.19A7.35,7.35,0,0,1,210.33,209Z" transform="translate(-10.32)"/>
+      </g>
+      </g>
+      </svg>
+    </div>
     <div class="zoomIn">
       <h1>Login</h1>
-      <form method="post">
+      <div>
+        <form method="post">
         <label for="email">Username</label>
-        <input type="email" name="email" placeholder="Enter your username">
-        <label for="password" name="pass">Password</label>
-        <input type="password" placeholder="Enter your password">
+        <input type="email" class="hov" name="email" placeholder="Enter your username">
+        <label for="password"  name="pass">Password</label>
+        <input type="password" class="hov" placeholder="Enter your password">
         <input type="submit" value="GO">
       </form>
+      </div>
     </div>
   </body>
 </html>
