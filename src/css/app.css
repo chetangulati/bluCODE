@@ -5,7 +5,7 @@
 
 body {
   background: #b4b4b4;
-  font-family: 'Raleway' , sans-serif; }
+  font-family: 'Raleway', sans-serif; }
 
 header {
   width: 100%;
@@ -80,7 +80,7 @@ header {
   height: 200px;
   border: 1px solid #b9b9b9; }
   .card h2 {
-    font-family: 'Exo 2', sans-serif;
+    font-family: inherit;
     color: #555;
     padding: 3px;
     text-align: center; }
@@ -157,6 +157,52 @@ header {
 #blankspace {
   height: 5px;
   width: 100%; }
+=======
+#profile {
+  background: #fff; }
+  #profile h2 {
+    color: #666;
+    font-weight: lighter;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px; }
+  #profile #userImg {
+    width: 100%;
+    position: relative; }
+  #profile #userPic {
+    width: 147px;
+    z-index: 1;
+    top: 72px;
+    position: absolute; }
+  #profile #picHolder {
+    margin-left: 27%;
+    width: 147px; }
+  #profile #frame {
+    width: 200px;
+    position: relative;
+    z-index: 2;
+    margin-left: 25%; }
+  #profile #userDetails {
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    background: #333;
+    color: #ccc; }
+    #profile #userDetails h3 {
+      padding: 10px;
+      font-weight: lighter; }
+    #profile #userDetails h2 {
+      text-align: center; }
+    #profile #userDetails h3, #profile #userDetails p {
+      display: table-cell;
+      font-size: 14px;
+      box-sizing: border-box; }
+    #profile #userDetails .row {
+      width: 100%;
+      display: table-row; }
+    #profile #userDetails .userCt {
+      width: 90%;
+      display: table; }
 
 footer {
   width: 100%;
