@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login | bluCODE</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
+    <style media="screen">
+      body{
+        background: #3a3a3a;
+        font-family: 'Raleway', sans-serif;
+      }
+      img{
+        width: 50%;
+        margin: 20px 25%;
+      }
+      h1{
+        color: #dadada;
+        font-weight: lighter;
+        font-size: 32px;
+        text-align: center;
+      }
+      form{
+        width: 80%;
+        margin: 0 10%;
+        float: left;
+      }
+      input{
+        width: 100%;
+        outline: none;
+        padding: 10px;
+        box-sizing: border-box;
+        background: #3a3a3a;
+        color: #999;
+        float: left;
+        border: 5px solid #2979ff;
+      }
+      label{
+        color: #e6e6e6;
+        margin: 5px 0;
+        float: left;
+      }
+      input[type=submit]{
+        width: 40%;
+        margin: 0 30%;
+        margin-top: 30px;
+        padding: 5px;
+        border: 5px solid #2979ff;
+        background: #40c4ff;
+        color: #fff;
+        font-family: inherit;
+        font-weight: bolder;
+        font-size: 22px;
+      }
+      .animated {
+        animation-duration: 1s;
+        animation-fill-mode: both;
+      }
+      @keyframes zoomIn {
+      from {
+        opacity: 0;
+        transform: scale3d(.3, .3, .3);
+        -webkit-transform: scale3d(.3, .3, .3);
+        -moz-transform: scale3d(.3, .3, .3);
+      }
+
+      50% {
+        opacity: 1;
+      }
+    }
+
+    .zoomIn {
+      float: left;
+      position: relative;
+      animation-name: zoomIn;
+      -webkit-animation-name: zoomIn;
+      -moz-animation-name: zoomIn;
+    }
+    </style>
+  </head>
+  <body>
+    <img src="logo.svg" alt="bluCODE">
+
+    <div class="zoomIn">
+      <h1>Login</h1>
+      <form method="post">
+        <label for="email">Username</label>
+        <input type="email" name="email" placeholder="Enter your username">
+        <label for="password" name="pass">Password</label>
+        <input type="password" placeholder="Enter your password">
+        <input type="submit" value="GO">
+      </form>
+    </div>
+  </body>
+</html>
