@@ -10,17 +10,17 @@ const Profile = require('./profile');
 var createClass = require('create-react-class');
 
 var Root = createClass({
-  // getActive: function () {
-  //   active:
-  // },
+  renderContent(){
+    return (
+      <Home />
+    );
+  },
   render: function () {
     return (
       <div>
         <Head />
-        <Home />
-        <Threads />
+        {this.renderContent()}
         <Profile />
-        <Saved />
         <Footer />
       </div>
     );

@@ -4,8 +4,10 @@
   margin: 0;
   padding: 0;
 }
+
 body{
   background: $lightGrey;
+  font-family: 'Raleway', sans-serif;
 }
 header{
   width: 100%;
@@ -89,7 +91,7 @@ header{
   height: 200px;
   border: 1px solid #b9b9b9;
   h2{
-    font-family: 'Exo 2', sans-serif;
+    font-family: inherit;
     color: #555;
     padding: 3px;
     text-align: center;
@@ -125,6 +127,64 @@ header{
     }
   }
 }
+#profile{
+  background: #fff;
+  h2{
+    color: #666;
+    font-weight: lighter;
+    padding: 10px;
+    text-align: center;
+    font-size: 18px;
+  }
+  #userImg{
+    width: 100%;
+    position: relative;
+  }
+  #userPic{
+    width: 147px;
+    z-index: 1;
+    top: 72px;
+    position: absolute;
+  }
+  #picHolder{
+    margin-left: 27%;
+    width: 147px;
+  }
+  #frame{
+    width: 200px;
+    position: relative;
+    z-index: 2;
+    margin-left: 25%;
+  }
+  #userDetails{
+    width: 90%;
+    height: 200px;
+    margin: auto;
+    background: #333;
+    color: #ccc;
+    h3{
+      padding: 10px;
+      font-weight: lighter;
+    }
+    h2{
+      text-align: center;
+    }
+    h3, p{
+      display: table-cell;
+      font-size: 14px;
+      box-sizing: border-box;
+    }
+    .row{
+      width: 100%;
+      display: table-row;
+    }
+    .userCt{
+      width: 90%;
+      display: table;
+    }
+  }
+}
+
 footer{
   width: 100%;
   background: #27272d;

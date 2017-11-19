@@ -10,16 +10,16 @@ var Head = createClass({
           <h1><img src={require('./images/logo.svg')} alt="Blu.Code"/></h1>
         </div>
        <div id="bottomNav">
-          <div className={'iconBtn active'} section="home">
+          <div className={'iconBtn'} onClick={this.handleBtnClick} section="home">
           <i className="fa fa-home" aria-hidden="true"></i>
         </div>
-        <div className={'iconBtn'} section="threads">
+        <div className={'iconBtn active'} onClick={this.handleBtnClick} section="threads">
           <i className="fa fa-list" aria-hidden="true"></i>
         </div>
-        <div className={'iconBtn'} section="profile">
+        <div className={'iconBtn'} onClick={this.handleBtnClick} section="profile">
           <i className="fa fa-user" aria-hidden="true"></i>
         </div>
-        <div className={'iconBtn'} section="saved">
+        <div className={'iconBtn'} onClick={this.handleBtnClick} section="saved">
           <i className="fa fa-bookmark" aria-hidden="true"></i>
         </div>
       </div>
