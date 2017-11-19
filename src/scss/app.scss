@@ -3,9 +3,11 @@
 *{
   margin: 0;
   padding: 0;
+  font-family: 'Raleway' , sans-serif;
 }
 body{
   background: $lightGrey;
+  font-family: 'Raleway' , sans-serif;
 }
 header{
   width: 100%;
@@ -124,6 +126,73 @@ header{
       background: #d9d9d9;
     }
   }
+}
+
+
+/*Edited By stArCK*/
+#threads{
+  background-color: #3A3A3A;
+  height: 480px;
+}
+.listItem{
+  height: 100px;
+  margin-top: 15px;
+  //margin-bottom: 10px;
+  //padding-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white;
+
+  .ans{
+    width: 15%;
+    height: 100%;
+    //background-color: white;
+    float: left;
+    .ans_no{
+      background-color: red;
+      width: 30px;
+      margin: 35px 30%;
+      height: 30%;
+    }
+  }
+  .topic{
+    width: 65%;
+    height: 100%;
+    //background-color: white;
+    float: left;
+    h3{
+      position: relative;
+      font-size: 28px;
+      //text-align: center;
+      padding-top: 20px;
+      padding-left: 10px;
+    }
+    p{
+      padding-top: 10px;
+      padding-left: 10px;
+    }
+  }
+  .viewbtnn{
+    width: 20%;
+    height: 100%;
+    //background-color: white;
+    float: left;
+    img{
+      //position: relative;
+      margin: auto;
+      padding: 10%;
+      height: 80px;
+      width: 80%;
+      //margin-top: 10%;
+      float: left;
+      //box-sizing: border-box;
+    }
+  }
+}
+
+#blankspace{
+  height: 5px;
+  width: 100%;
 }
 footer{
   width: 100%;

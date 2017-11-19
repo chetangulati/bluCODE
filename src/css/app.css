@@ -1,9 +1,11 @@
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Raleway' , sans-serif; }
 
 body {
-  background: #b4b4b4; }
+  background: #b4b4b4;
+  font-family: 'Raleway' , sans-serif; }
 
 header {
   width: 100%;
@@ -52,6 +54,7 @@ header {
   #banner #q {
     width: 75%;
     padding: 7px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     font-family: sans-serif;
     font-size: 16px;
@@ -59,6 +62,7 @@ header {
     background: #b4b4b4; }
   #banner #qsubmit {
     width: 15%;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
     margin: 0 5% 0 0;
     height: 33px;
@@ -96,6 +100,7 @@ header {
     float: left;
     overflow: hidden;
     border-radius: 10px;
+    -webkit-box-shadow: 3px 3px 15px #aaa;
     box-shadow: 3px 3px 15px #aaa; }
     .card .block .blkimg {
       width: 100%;
@@ -106,9 +111,54 @@ header {
       height: 30%;
       background: #d9d9d9; }
 
+/*Edited By stArCK*/
+#threads {
+  background-color: #3A3A3A;
+  height: 480px; }
+
+.listItem {
+  height: 100px;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: white; }
+  .listItem .ans {
+    width: 15%;
+    height: 100%;
+    float: left; }
+    .listItem .ans .ans_no {
+      background-color: red;
+      width: 30px;
+      margin: 35px 30%;
+      height: 30%; }
+  .listItem .topic {
+    width: 65%;
+    height: 100%;
+    float: left; }
+    .listItem .topic h3 {
+      position: relative;
+      font-size: 28px;
+      padding-top: 20px;
+      padding-left: 10px; }
+    .listItem .topic p {
+      padding-top: 10px;
+      padding-left: 10px; }
+  .listItem .viewbtnn {
+    width: 20%;
+    height: 100%;
+    float: left; }
+    .listItem .viewbtnn img {
+      margin: auto;
+      padding: 10%;
+      height: 80px;
+      width: 80%;
+      float: left; }
+
+#blankspace {
+  height: 5px;
+  width: 100%; }
+
 footer {
   width: 100%;
   background: #27272d;
   height: 200px; }
-
-/*# sourceMappingURL=app.css.map */
